@@ -75,7 +75,7 @@ The front-end is built using [Materialize](https://materializecss.com/). The num
 
 ### Tools
 
-[Visual Studio Code](https://code.visualstudio.com/) version 1.43.1 with the [Arduino extension](https://github.com/Microsoft/vscode-arduino.git) was used for development.
+[Visual Studio Code](https://code.visualstudio.com/) with [PlatformIO](https://platformio.org/)
 
 ## Web API
 
