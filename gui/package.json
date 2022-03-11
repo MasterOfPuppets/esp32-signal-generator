@@ -1,8 +1,10 @@
 {
     "dependencies": {
         "jquery": "^3.4.1",
+        "materialize-css": "^1.0.0-rc.2",
         "parcel": "^1.12.4",
-        "parcel-plugin-inliner": "^1.0.14"
+        "parcel-plugin-inliner": "^1.0.14",
+        "sass": "^1.49.9"
     },
     "scripts": {
         "dev": "parcel index.html",

@@ -2,7 +2,8 @@
 
 bool WiFi_Module::TryConnect(String ssid, String password, IPAddress local_ip, IPAddress gateway, IPAddress subnet) {
     bool wifi_connected = false;
-
+    const char* wifi_host = "Slomo";
+    
     bool wifi_configured = ssid[0];
     if (wifi_configured) {
         WiFi.disconnect(true);  //disconnect form wifi to set new wifi connection
@@ -17,6 +18,7 @@ bool WiFi_Module::TryConnect(String ssid, String password, IPAddress local_ip, I
         }
 
         // Connect using WPA personal
+        WiFi.setHostname(wifi_host);
         WiFi.begin(ssid.c_str(), password.c_str());
 
         int ctr = 10;
@@ -26,6 +28,7 @@ bool WiFi_Module::TryConnect(String ssid, String password, IPAddress local_ip, I
 
         wifi_connected = ctr >= 0;
     }
+    
 
     return wifi_connected;
 }
